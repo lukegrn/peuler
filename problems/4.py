@@ -1,5 +1,5 @@
 def is_palidromatic(n):
-    lst = [int(x) for x in str(n)]
+    lst = [x for x in str(n)]
     while len(lst) > 1:
         if lst[0] != lst[-1]:
             return False
