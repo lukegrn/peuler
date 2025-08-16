@@ -8,7 +8,6 @@ def solve():
     while len(primes) < 10_001:
         for prime in primes:
             if n % prime == 0:
-                isPrime = False
                 break
             elif prime**2 > n:
                 primes.append(n)
