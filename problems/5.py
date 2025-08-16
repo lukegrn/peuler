@@ -1,6 +1,3 @@
-from functools import reduce
-
-
 def solve():
     needs_to_divide_by = range(11, 21)  # 11-20 covers 1-10 also
 
