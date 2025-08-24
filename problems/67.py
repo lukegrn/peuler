@@ -1,5 +1,7 @@
 import os
 
+from utils.util import file
+
 cache = {}
 
 
@@ -17,8 +19,7 @@ def max_path_value(tree: list[list[int]], x: int = 0, y: int = 0):
 
 
 def solve():
-    with open(f"{os.path.dirname(__file__)}/files/67.txt") as file:
-        data = file.read()
+    data = file()
 
     tree = [[int(i) for i in line.split(" ")] for line in data.strip().split("\n")]
 
